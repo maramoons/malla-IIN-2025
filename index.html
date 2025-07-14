@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Malla Interactiva - Ingeniería en Informática</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla IIN 2025</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Malla Interactiva - Ingeniería en Informática</h1>
-  <div id="creditos">Créditos acumulados: <span id="contador">0</span></div>
-  <div class="grid" id="malla"></div>
+  <header>
+    <h1>Malla Curricular IIN 2025</h1>
+  </header>
+
+  <main id="malla"></main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p><strong>Créditos:</strong> <span id="modalCreditos"></span></p>
+      <p><strong>Requisitos:</strong> <span id="modalRequisitos"></span></p>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
